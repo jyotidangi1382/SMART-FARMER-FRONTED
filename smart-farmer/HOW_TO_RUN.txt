@@ -1,0 +1,85 @@
+============================================================
+  SMART FARMER ASSISTANT - HOW TO RUN ON YOUR LAPTOP
+============================================================
+
+STEP 1 — Install Node.js (only once)
+--------------------------------------
+Go to:  https://nodejs.org
+Download the LTS version and install it.
+Restart your computer after installing.
+
+
+STEP 2 — Open Terminal / Command Prompt
+-----------------------------------------
+Windows:  Press  Win + R  →  type "cmd"  →  press Enter
+Mac:      Press  Cmd + Space  →  type "Terminal"  →  Enter
+
+
+STEP 3 — Go into the project folder
+--------------------------------------
+Type this in your terminal (change the path to where you extracted the zip):
+
+  Windows:   cd C:\Users\YourName\Downloads\smart-farmer
+  Mac/Linux: cd ~/Downloads/smart-farmer
+
+
+STEP 4 — Install packages (only once)
+----------------------------------------
+  npm install
+
+Wait for it to finish (2-3 minutes, downloads packages).
+
+
+STEP 5 — Start the app
+------------------------
+  npm start
+
+Your browser will automatically open:
+  👉  http://localhost:3000
+
+The app is running! 🎉
+
+
+DEMO LOGIN CREDENTIALS
+-----------------------
+  Email:    demo@farmer.in
+  Password: demo123
+
+
+STOP THE APP
+-------------
+Press  Ctrl + C  in the terminal window.
+
+
+============================================================
+  FOLDER STRUCTURE
+============================================================
+
+smart-farmer/
+├── src/
+│   ├── App.js          ← Main application (all pages + logic)
+│   └── index.js        ← Entry point
+├── public/
+│   └── index.html      ← HTML template
+├── package.json        ← Project dependencies
+├── HOW_TO_RUN.txt      ← This file
+└── README.md           ← Full documentation
+
+
+============================================================
+  TROUBLESHOOTING
+============================================================
+
+Problem: "npm is not recognized"
+Fix:     Node.js was not installed correctly. Re-install from nodejs.org
+
+Problem: "Port 3000 already in use"
+Fix:     Run this instead:  npm start -- --port 3001
+
+Problem: App shows error / blank screen
+Fix:     Make sure you ran "npm install" before "npm start"
+
+Problem: Very slow first load
+Fix:     Normal — React compiles on first run. Wait 30 seconds.
+
+============================================================
